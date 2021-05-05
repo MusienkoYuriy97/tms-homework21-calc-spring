@@ -1,5 +1,10 @@
 package by.teach.calc.dao;
 
-public class OperationDao {
+import by.teach.calc.entity.Operation;
 
+import java.util.List;
+
+public interface OperationDao {
+    void add(Operation operation);
+    List<Operation> getOperations();
 }
